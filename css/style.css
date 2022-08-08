@@ -6,28 +6,37 @@
 --roboto: 'Roboto', sans-serif;
 --dark: #3c393d;
 --exdark: #2b2b2b;
+
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--quicksand);
      text-decoration: none;
-}
-html{
+
+    }
+
+    html{
     scroll-behavior: smooth;
 
-}
+
+    }
 
 body{
     line-height: 1.4;
     color: var(--dark);
+
 }
+
 img{
     width: 100%;
     display: block;
 
+
 }
+
 .container{
     max-width: 1320px;
     margin: auto;
@@ -119,10 +128,8 @@ button{
 
 }
 
-
-
-
-
+/* header end  */
+/* section start  */
 
 
 .design{
