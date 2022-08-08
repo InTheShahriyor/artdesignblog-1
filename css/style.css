@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700;1,900&family=Quicksand:wght@700&family=Roboto:ital,wght@1,100;1,300&display=swap');
+
+:root{
+--playfair: 'Playfair Display', serif;
+--quicksand: 'Quicksand', sans-serif;
+--roboto: 'Roboto', sans-serif;
+--dark: #3c393d;
+--exdark: #2b2b2b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--quicksand);
+     text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+img{
+    width: 100%;
+    display: block;
+
+}
+.container{
+    max-width: 1320px;
+    margin: auto;
+    padding: 1.2rem;
+    
+}
+
+/* start header section  */
+
+header{
+    height: 100vh;
+    background-color: #868989;
+    background-image: url(../img/infiniti.jpg);
+    background-size: 100% 100%;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--dark);
+
+}
+.logo h1{
+    color: #ffff;
+    text-transform: capitalize;
+    font-family: var(--playfair);
+    font-size: 2.5rem;
+    margin-top: -2%;
+}
+.navbarnav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -3%;
+    margin-left: 50%;
+}
+.navbarnav a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #ffff;
+    transition: all 1s linear;
+}
+.navbarnav a:hover{
+    color: rgb( 179, 200, 219)
+}
+.banner{
+    padding: 4.8rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.banner-title{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 3rem;
+
+}
+.banner-title h2 span{
+    color: black;
+
+}
+.banner-title h2 {
+    color: #ffff;
+    
+}
+.banner-title p{
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-family: var(--playfair);
+}
+form{
+    padding: 0.6rem 0.6rem;
+    background-color: #ffff;
+    border-radius: 10rem;
+    margin-top: 1rem;
+    overflow: hidden;
+
+}
+.btn-cearch{
+    width: 90%;
+    margin-right: 0;
+    margin-left: 0;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+button{
+    border: none;
+
+}
+
+
+
+
+
+
+
+.design{
+    padding: 4.8rem 0;
+text-align: center;
+
+}
+h1{
+    font-size: 2rem;
+    font-family: var(--playfair);
+}
+.design-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 3%;
+    gap: 30px;
+
+}
+.design-item{
+    cursor: pointer;
+}
+.design-img{
+    overflow: hidden;
+    position: relative;
+
+}
+.design-img span:first-of-type{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    color: #ffff;
+    background-color: var(--dark);
+    padding: 0.4rem 1rem;
+
+}
+.design-img .fa-heart{
+    color: red;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    color: #ffff;
+    font-family: var(--quicksand);
+    font-weight: bold;
+
+}
+.design-img:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.3);
+}
+.design-img img{
+    transition: all 0.5s ease;
+}
+.design-img:hover img{
+transform: scale(1.5);
+}
+.design-title{
+    margin-top: 4%;
+    cursor: copy;
+
+
+}
+.design-title p{
+    font-family: var(--roboto);
+    color: var(--exdark);
+    font-weight: 900;
+}
+
+/* section end  */
+/* start blog */
+
+.blog{
+    padding: 4.8rem 0;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.blog title h2{
+    font-family: var(--playfair);
+    font-size: 2.5 rem;
+}  
+.blog .title span{
+    margin-bottom: 1rem;
+} 
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.blog-item{
+    cursor: pointer;
+
+}
+.blog-img{
+    position: relative;
+}
+.blog-img .fa-heart{
+     position: absolute;
+     z-index: 1;
+     bottom: 20px;
+     right: 20px;
+     font-size: 1.5rem;
+     padding: 0.8rem 0.8rem;
+     background-color: var(--dark);
+     color: azure;
+     border-radius: 10px;
+}
+.blog-img .fa-heart:hover{
+     color: var(--exdark);
+     color: red;
+     border-radius: 40%;
+}
+.blog-title{
+    text-align: left;
+    cursor: copy;
+    margin-top: 1rem;
+}
+.blog-title span{
+    font-family: var(--quicksand);
+    margin-top: 1rem;
+
+}
+.blog-title h1{
+    font-family: var(--quicksand);
+     margin-top: 1rem;
+     font-weight: 400;
+     color: var(--exdark);
+     margin-bottom: 1rem;
+     font-size: 1.8rem;    
+}
+.blog-title p{
+    font-family: var(--roboto);
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.blog-title a{
+    text-align: left;
+    padding: 0.6rem 1rem;
+    background-color: var(--dark);
+    text-transform: capitalize;
+    color: #ffff;
+    border-radius: 10px;
+
+}
+.blog-title a:hover{
+    color: red;
+    background-color: var(--exdark);
+}
+/* blog end  */
+/* about start  */
+
+.about{
+    padding: 4.8rem 0;
+    background-color: #ffff;
+
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.about-title{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.about-title h1{
+    color: var(--exdark);
+    font-family: var(--playfair);
+    margin-bottom: 1rem;
+
+}
+.about-title span{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+
+}
+.about-title p{
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+}
+
+/* <!-- about end  -->
+<!-- foot star  --> */
+
+.footer{
+    padding: 4.8rem 0;
+    background-color: var(--dark);
+    text-align: center;
+}
+.social-media .fab{
+     color: #ffff;
+     font-size: 1.5rem;
+     padding-left: 1rem;
+     padding: 0.2rem;
+     border: 1px solid white;
+     border-radius: 100%;
+     transition: all.5s linear;
+     margin-bottom: 1rem;
+}
+.social-media .fab:hover{
+    background-color: azure;
+    color: var(--exdark);
+}
+.footer-titlE span{
+    color: azure;
+    font-family: var(--playfair);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.navbarnav i{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    .navbarnav a{
+        display: none;
+        
+
+    }
+    .navbarnav i{
+        display: block;
+        color: aqua;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
